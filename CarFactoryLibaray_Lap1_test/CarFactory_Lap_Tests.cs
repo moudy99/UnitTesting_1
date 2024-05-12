@@ -15,5 +15,19 @@ namespace CarFactoryLibaray_Lap1_test
             Assert.IsType<BMW>(car);
 
         }
+
+
+        [Fact]
+        public void NewCar_CarTypeHonda_Exception()
+        {
+            // A1
+            // A3
+            Assert.Throws<NotImplementedException>(() =>
+            {
+                // A2
+                Car? result = CarFactory.NewCar(CarTypes.Honda);
+            });
+        }
+
     }
 }
